@@ -150,11 +150,11 @@ footer select {
 	opacity: 0;
 	left: -3500px;
 	position: relative;
-	-webkit-transition: all 1s ease;
+	-webkit-transition: all 1.5s ease;
 	-webkit-transition-property: left, opacity;
-	-moz-transition: all 1s ease;
+	-moz-transition: all 1.5s ease;
 	-moz-transition-property: left, opacity;
-	-o-transition: all 1s ease;
+	-o-transition: all 1.5s ease;
 	-o-transition-property: left, opacity;
 }
 
