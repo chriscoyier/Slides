@@ -1,4 +1,6 @@
 $(window).load(function() {
+	// Would be nice if this would delay a little bit if it fires too fast
+	// ... like a minimum time (if page is cached)
 	$("html").addClass("loaded");	
 });
 
