@@ -9,7 +9,7 @@
 	
 	<section>
 
-		<!-- Slide content goes here -->
+		<p><a href="http://www.flickr.com/photos/claudio_ar/2077867996/">Photo by claudio_ar</a>
 		
 	</section>
 	
