@@ -5,9 +5,13 @@
 	include_once("../includes/header.php"); 
 ?>
 
-<div id="content">
+<div id="content" class="slide-3">
+	
+	<section>
 
-	<!-- Slide content goes here -->
+		<!-- Slide content goes here -->
+		
+	</section>
 	
 </div><!--content-->
 

@@ -8,11 +8,11 @@ function gotoThere(link) {
 
 $("#previous, #next").click(function(e) {
 	$("html").addClass("leaving");
-	setTimeout(gotoThere, 300, this.href);
+	setTimeout(gotoThere, 400, this.href);
 	return false;
 });
 
 $("#jumper").change(function() {
  	$("html").addClass("leaving");
-	setTimeout(gotoThere, 300, $(this).val());
+	setTimeout(gotoThere, 400, $(this).val());
 });

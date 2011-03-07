@@ -1,5 +1,5 @@
 html { overflow-y: scroll; }
-html, body { overflow-x: hidden; }
+html, body { overflow-x: hidden; height: 100%; }
 body {
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-weight: 300;
@@ -13,7 +13,7 @@ body {
 header, footer, section, figure { display: block; }
 
 header { 
-	background: #686dd6; 
+	background: rgba(50,50,200,0.8); 
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -42,8 +42,11 @@ header section {
 	text-indent: -9999px;
 }
 #content {
- padding-top: 170px;
- padding-bottom: 80px;
+	height: 100%;
+}
+#content section {
+	padding-top: 170px;
+	padding-bottom: 80px;	
 }
 
 h1, h2, h3, h4, h5 {
@@ -52,7 +55,7 @@ h1, h2, h3, h4, h5 {
 }
 h1 {
 	font-size: 66px;
-	background: #2C2A25;
+	background: rgba(0,0,0,0.8);
 	color: white;
 	text-align: center;
 	position: fixed;
@@ -79,12 +82,12 @@ h2 {
 }
 
 h3 {
-	font-size: 26px;
+	font-size: 40px;
 	margin: 0 0 15px 0;
 }
 
 footer {
-	background: #2C2A25;
+	background: rgba(0,0,0,0.8);
 	padding: 10px;
 	position: fixed;
 	width: 100%;
@@ -105,12 +108,12 @@ footer select {
 
 #next {
 	position: absolute;
-	right: 30px;
+	right: 40px;
 	top: 0;
 }
 #previous {
 	position: absolute;
-	left: 30px;
+	left: 20px;
 	top: 0;
 }
 #next:after, #previous:after {
@@ -127,7 +130,7 @@ footer select {
 	border-left: 15px solid #999;
 }
 #previous:after {
-	right: 125%;
+	right: 120%;
 	border-right: 15px solid #999;
 }
 #next:hover, #previous:hover {
@@ -148,8 +151,11 @@ footer select {
 	left: -3500px;
 	position: relative;
 	-webkit-transition: all 1s ease;
+	-webkit-transition-property: left, opacity;
 	-moz-transition: all 1s ease;
+	-moz-transition-property: left, opacity;
 	-o-transition: all 1s ease;
+	-o-transition-property: left, opacity;
 }
 
 .loaded #content, .loaded h1 section {

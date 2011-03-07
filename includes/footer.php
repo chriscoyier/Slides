@@ -30,8 +30,6 @@
 		</section>
 	</footer>
 
-	</div><!--page-wrap-->
-
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
 	<script src="../scripts/slide.js"></script>
 

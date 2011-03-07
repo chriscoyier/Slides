@@ -13,7 +13,7 @@
 	$pageNames = array(
 		'1-intro.php'         => 'This is my <strong>amazing</strong> first slide',
 		'2-whatever.php'      => 'You like <strong>code</strong> don\'t you?',
-		'3-graphic.php'       => '...others do not.'
+		'3-graphic.php'       => 'Thank you <strong>very</strong> much.'
 	);
 	
 	

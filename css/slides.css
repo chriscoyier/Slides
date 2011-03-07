@@ -1,0 +1,29 @@
+.slide-1 {
+	background: url(../images/traintrack.jpg) center center no-repeat;
+}
+.slide-1 blockquote {
+	color: white;
+	font-size: 40px;
+	margin-top: 60px;
+	text-shadow: 0 2px 0 black;
+	font: italic 70px Baskerville;
+	text-align: center;
+
+}
+.slide-1 blockquote cite {
+	display: block;
+	font-size: 30px;
+	margin-top: 130px;
+}
+
+.slide-2 pre {
+	background: #333;
+	color: white;
+	padding: 30px;
+	font: 40px Monaco, MonoSpace;
+	margin: 0;
+}
+
+.slide-3 {
+	background: url(../images/sunflowers.jpg) center center no-repeat;
+}
