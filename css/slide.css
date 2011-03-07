@@ -3,27 +3,13 @@ html, body { overflow-x: hidden; }
 body {
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-weight: 300;
-    font-size: 13px;
+    font-size: 15px;
     line-height: 1.4;
 	background: white;
 	padding: 0; margin: 0;
 }
 
-#logo {
-	position: absolute;
-	right: 20px;
-	top: 12px;
-	background: url(../images/logo.png) no-repeat;
-	width: 62px;
-	height: 24px;
-	text-indent: -9999px;
-}
-
-#content {
- padding-top: 170px;
- padding-bottom: 80px;
-}
-
+/* HTML5 elements...*/
 header, footer, section, figure { display: block; }
 
 header { 
@@ -43,7 +29,21 @@ section {
 }
 
 header section {
-  padding: 10px;
+  padding: 10px 0 12px 0;
+}
+
+#logo {
+	position: absolute;
+	right: 20px;
+	top: 12px;
+	background: url(../images/logo.png) no-repeat;
+	width: 62px;
+	height: 24px;
+	text-indent: -9999px;
+}
+#content {
+ padding-top: 170px;
+ padding-bottom: 80px;
 }
 
 h1, h2, h3, h4, h5 {
@@ -56,7 +56,7 @@ h1 {
 	color: white;
 	text-align: center;
 	position: fixed;
-	top: 48px;
+	top: 50px;
 	left: 0;
 	width: 100%;
 	color: #999;
@@ -65,7 +65,7 @@ h1 {
 	z-index: 10;
 }
 h1 section {
-  padding: 10px;
+  padding: 10px 0 12px 0;
   left: 0;
 }
 h1 strong, h2 strong {
@@ -75,7 +75,7 @@ h1 strong, h2 strong {
 h2 {
 	font-size: 24px;
 	text-transform: uppercase;
-	letter-spacing: 2px;
+	letter-spacing: 3px;
 }
 
 h3 {
@@ -105,19 +105,44 @@ footer select {
 
 #next {
 	position: absolute;
-	right: 20px;
+	right: 30px;
 	top: 0;
 }
 #previous {
 	position: absolute;
-	left: 0;
+	left: 30px;
 	top: 0;
+}
+#next:after, #previous:after {
+	content: "";
+	position: absolute;
+	top: 6px;	
+	width: 0;
+	height: 0;
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+}
+#next:after {
+	left: 125%;
+	border-left: 15px solid #999;
+}
+#previous:after {
+	right: 125%;
+	border-right: 15px solid #999;
+}
+#next:hover, #previous:hover {
+	font-weight: 600;
+}
+#next:hover:after {
+	border-left-color: white;
+}
+#previous:hover:after {
+	border-right-color: white;
 }
 
 
 
 /* Slide-y Stuff */
-
 #content, h1 section {
 	opacity: 0;
 	left: -3500px;

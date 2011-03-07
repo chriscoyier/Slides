@@ -11,8 +11,8 @@
 	// Put file names and names of slides here
 	// This could probably be improved...
 	$pageNames = array(
-		'1-intro.php'         => 'Well, hello there!',
-		'2-whatever.php'      => 'Some robots have wheels...',
+		'1-intro.php'         => 'This is my <strong>amazing</strong> first slide',
+		'2-whatever.php'      => 'You like <strong>code</strong> don\'t you?',
 		'3-graphic.php'       => '...others do not.'
 	);
 	

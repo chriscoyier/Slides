@@ -26,7 +26,6 @@
 					}
 				?>
 			</select>
-			<a href="#">Report an Error</a>
 			<a href="<?php echo array_key_relative($pageNames, $_SERVER["SCRIPT_NAME"], 1); ?>" id="next">Next</a>
 		</section>
 	</footer>
