@@ -7,11 +7,15 @@
         }
         return false;
     }
+    function current_file($scriptname) {
+        $parts = explode('/', $scriptname);
+        return  $parts[count($parts) - 1];
+    }
 ?>
 
 	<footer>
 		<section>
-			<a href="<?php echo array_key_relative($pageNames, $_SERVER["SCRIPT_NAME"], -1); ?>" id="previous">Previous</a>
+			<a href="<?php echo array_key_relative($pageNames, current_file($_SERVER["SCRIPT_NAME"]), -1); ?>" id="previous">Previous</a>
 			Jump to: 
 			<select id="jumper">
 				<?php
@@ -26,7 +30,7 @@
 					}
 				?>
 			</select>
-			<a href="<?php echo array_key_relative($pageNames, $_SERVER["SCRIPT_NAME"], 1); ?>" id="next">Next</a>
+			<a href="<?php echo array_key_relative($pageNames, current_file($_SERVER["SCRIPT_NAME"]), 1); ?>" id="next">Next</a>
 		</section>
 	</footer>
 
