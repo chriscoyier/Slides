@@ -11,6 +11,7 @@ So far... the process is:
 
 ##To Do
 
+- Make a intro page for this project
 - Browser testing (only modern, it's a slide deck, not a public website...)
 - Get slide in / slide out to move different directions based on Next/Previous
 - **Make better and more practical slide examples**
