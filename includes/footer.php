@@ -11,7 +11,13 @@
 
 	<footer>
 		<section>
-			<a href="<?php echo array_key_relative($pageNames, $_SERVER["SCRIPT_NAME"], -1); ?>" id="previous">Previous</a>
+			
+			<?php 
+				reset($pageNames); // move array pointer to beginning
+				if (basename($_SERVER["SCRIPT_NAME"]) != key($pageNames)) { ?>
+					<a href="<?php echo array_key_relative($pageNames, basename($_SERVER["SCRIPT_NAME"]), -1); ?>" id="previous">Previous</a>
+			<?php } ?>
+			
 			Jump to: 
 			<select id="jumper">
 				<?php
@@ -26,7 +32,13 @@
 					}
 				?>
 			</select>
-			<a href="<?php echo array_key_relative($pageNames, $_SERVER["SCRIPT_NAME"], 1); ?>" id="next">Next</a>
+			
+			<?php 
+				end($pageNames); // move array pointer to last
+				if (basename($_SERVER["SCRIPT_NAME"]) != key($pageNames)) { ?>
+					<a href="<?php echo array_key_relative($pageNames, basename($_SERVER["SCRIPT_NAME"]), 1); ?>" id="next">Next</a>
+			<?php } ?>
+			
 		</section>
 	</footer>
 
