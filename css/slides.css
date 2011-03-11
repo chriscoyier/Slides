@@ -1,29 +1,72 @@
 .slide-1 {
 	background: url(../images/traintrack.jpg) center center no-repeat;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	display: table;
+	width: 100%; 
+	height: 100%; 
+}
+.slide-1 section {
+	display: table-cell;
+	vertical-align: middle;
 }
 .slide-1 blockquote {
 	color: white;
 	font-size: 40px;
-	margin-top: 60px;
-	text-shadow: 0 2px 0 black;
-	font: italic 70px Baskerville;
+	margin: 60px auto 0;
+	text-shadow: 
+		0 2px 0 black,
+		0 0 30px black;
+	font-weight: 800;
+	font-size: 80px;
+	line-height: 1.1;
+	letter-spacing: -1px;
 	text-align: center;
+	padding: 0 30px;
 
 }
 .slide-1 blockquote cite {
-	display: block;
+	display: inline-block;
 	font-size: 30px;
-	margin-top: 130px;
+	margin-top: 100px;
+	background: rgba(0,0,0,0.8);
+	padding: 10px 20px 14px 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
 }
 
 .slide-2 pre {
 	background: #333;
 	color: white;
 	padding: 30px;
-	font: 40px Monaco, MonoSpace;
+	font: 36px Monaco, MonoSpace;
 	margin: 0;
 }
 
 .slide-3 {
 	background: url(../images/sunflowers.jpg) center center no-repeat;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.slide-3 h1 {
+	font-size: 66px;
+	background: rgba(0,0,0,0.8);
+	color: white;
+	text-align: center;
+	width: 100%;
+	color: #999;
+	letter-spacing: -1px;
+	min-height: 55px;
+	z-index: 10;
+	position: relative;
+	top: 200px;
+}
+.slide-3 h1 section {
+  padding: 10px 0 12px 0;
+  left: 0;
 }
