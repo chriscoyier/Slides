@@ -4,11 +4,3 @@
 		<div id="logo"><?php echo $brand; ?></div>
 	</section>
 </header>
-
-<h1>
-	<section>
-		<?php 
-			echo $slideTitle; 
-		?>
-	</section>
-</h1>
