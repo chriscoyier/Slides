@@ -8,14 +8,17 @@
 <div id="content" class="slide-1">
 	
 	<section>
+		
+		<?php 
+			// If you want to display, you have access to this here: 
+			// echo $slideTitle; 
+		?>
 
 		<blockquote>
 			Children and dogs are as necessary to the welfare of the country as Wall Street and the railroads.
-			<cite>- Harry S Truman</cite>
+			<br><cite>- Harry S Truman</cite>
 		</blockquote>
-		
-		<p><a href="http://www.flickr.com/photos/dotdoubledot/2208867228/">Photo by Sandy Redding</a></p>
-	
+			
 	</section>
 	
 </div><!--content-->
