@@ -1,5 +1,5 @@
-html { overflow-y: scroll; }
-html, body { overflow-x: hidden; height: 100%; }
+html { overflow-y: scroll; overflow-x: hidden; }
+html, body { height: 100%; }
 body {
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-weight: 300;
@@ -11,9 +11,8 @@ body {
 
 /* HTML5 elements...*/
 header, footer, section, figure { display: block; }
-
 header { 
-	background: rgba(50,50,200,0.8); 
+	background: rgba(0,0,0,0.8);
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -21,13 +20,11 @@ header {
 	color: white; 
 	z-index: 10;
 }
-
 section {
 	width: 1024px;
 	margin: 0 auto;
 	position: relative;
 }
-
 header section {
   padding: 10px 0 12px 0;
 }
@@ -45,31 +42,12 @@ header section {
 	height: 100%;
 }
 #content section {
-	padding-top: 170px;
-	padding-bottom: 80px;	
+	padding: 80px 0;
 }
 
 h1, h2, h3, h4, h5 {
 	margin: 0;
 	font-weight: 100;
-}
-h1 {
-	font-size: 66px;
-	background: rgba(0,0,0,0.8);
-	color: white;
-	text-align: center;
-	position: fixed;
-	top: 50px;
-	left: 0;
-	width: 100%;
-	color: #999;
-	letter-spacing: -1px;
-	min-height: 55px;
-	z-index: 10;
-}
-h1 section {
-  padding: 10px 0 12px 0;
-  left: 0;
 }
 h1 strong, h2 strong {
 	font-weight: 700;
@@ -148,7 +126,7 @@ footer select {
 /* Slide-y Stuff */
 #content, h1 section {
 	opacity: 0;
-	left: -3500px;
+	/*left: -3500px;*/
 	position: relative;
 	-webkit-transition: all 1.5s ease;
 	-webkit-transition-property: left, opacity;
@@ -159,11 +137,11 @@ footer select {
 }
 
 .loaded #content, .loaded h1 section {
-	left: 0;
+	/*left: 0;*/
 	opacity: 1;
 }
 
 .leaving #content, .leaving h1 section {
-	left: 3500px;
+	/*left: 3500px;*/
 	opacity: 0;
 }
