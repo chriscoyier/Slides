@@ -3,7 +3,7 @@
 	// Put your logo in the images folder. Alpha transparent PNG @ 64px x 24px
 
 	// Title of your Presentation
-	$presentationTitle = "My Amazing Slide Deck";
+	$presentationTitle = "My <strong>Amazing</strong> Slide Deck";
 	
 	// Brand Name (like alt text for logo kinda)
 	$brand = "Brand";
@@ -13,7 +13,8 @@
 	$pageNames = array(
 		'1-intro.php'         => 'This is my <strong>amazing</strong> first slide',
 		'2-whatever.php'      => 'You like <strong>code</strong> don\'t you?',
-		'3-graphic.php'       => 'Thank you <strong>very</strong> much.'
+		'3-graphic.php'       => 'Thank you <strong>very</strong> much.',
+		'4-credits.php'       => 'Image Credits'
 	);
 	
 	
