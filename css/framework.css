@@ -126,22 +126,19 @@ footer select {
 /* Slide-y Stuff */
 #content, h1 section {
 	opacity: 0;
-	/*left: -3500px;*/
+	left: -100%;
 	position: relative;
 	-webkit-transition: all 1.5s ease;
-	-webkit-transition-property: left, opacity;
 	-moz-transition: all 1.5s ease;
-	-moz-transition-property: left, opacity;
 	-o-transition: all 1.5s ease;
-	-o-transition-property: left, opacity;
 }
 
 .loaded #content, .loaded h1 section {
-	/*left: 0;*/
+	left: 0;
 	opacity: 1;
 }
 
 .leaving #content, .leaving h1 section {
-	/*left: 3500px;*/
+	left: 100%;
 	opacity: 0;
 }
